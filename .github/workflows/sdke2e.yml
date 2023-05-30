@@ -1,0 +1,14 @@
+name: SDK Dependency E2E Test
+
+on:
+  push:
+    branches:
+      - renovate/**
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print head Ref
+        run: echo ${{ github }}
+        
