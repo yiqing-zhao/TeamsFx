@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        runs: |
+        run: |
           echo "Run SDK-E2E"
