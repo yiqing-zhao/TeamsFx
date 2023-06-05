@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List cases for dispatch
-        id: dispatch-cases
         if: ${{  github.event_name == 'workflow_dispatch' }}
         working-directory: packages/cli/tests/e2e
         run: |
