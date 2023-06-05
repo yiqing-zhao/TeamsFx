@@ -21,7 +21,7 @@ jobs:
           inputCases='${{ github.event.inputs.cases }}'
           if [ -z "$inputCases" ]; then
             allCases=`find . -wholename "*.tests.ts" | jq -Rsc '[split("\n") | .[]| select(.!="")]'`
-            echo ${{ allCases }}
+            echo $allCases
           else
-            echo ${{ inputCases }}
+            echo $inputCases
           fi
