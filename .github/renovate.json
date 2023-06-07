@@ -14,10 +14,15 @@
     {
       "enabled": false,
       "matchDepPatterns": ["*"],
-      "excludeDepPatterns": ["bot", "fluentui"],
       "excludeDepNames": [
+        "botbuilder",
+        "botbuilder-dialogs",
+        "botframework-schema",
+        "botbuilder-core",
         "@microsoft/teams-js",
         "@microsoft/microsoft-graph-client",
+        "@fluentui/react-components",
+        "@fluentui/react",
         "@microsoft/mgt-element",
         "@microsoft/mgt-react",
         "@microsoft/mgt-teamsfx-provider"
@@ -25,15 +30,24 @@
     },
     {
       "groupName": "botbuilder",
-      "matchPackagePrefixes": ["bot"]
+      "matchPackageNames": [
+        "botbuilder",
+        "botbuilder-dialogs",
+        "botframework-schema",
+        "botbuilder-core"
+      ]
     },
     {
       "groupName": "fluentui",
-      "matchPackagePrefixes": ["@fluentui/"]
+      "matchPackageNames": ["@fluentui/react-components", "@fluentui/react"]
     },
     {
       "groupName": "graph toolkit",
-      "matchPackagePrefixes": ["@microsoft/mgt"]
+      "matchPackageNames": [
+        "@microsoft/mgt-element",
+        "@microsoft/mgt-react",
+        "@microsoft/mgt-teamsfx-provider"
+      ]
     },
     {
       "matchPackageNames": [
