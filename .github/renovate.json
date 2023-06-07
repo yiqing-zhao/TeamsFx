@@ -32,9 +32,9 @@
       "matchPackagePrefixes": ["@fluentui/"]
     },
     {
-      "groupName": "graph toolkit"
+      "groupName": "graph toolkit",
       "matchPackagePrefixes": ["@microsoft/mgt"]
-    }
+    },
     {
       "matchPackageNames": [
         "botbuilder",
