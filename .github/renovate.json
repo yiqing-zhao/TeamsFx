@@ -17,7 +17,10 @@
       "excludeDepPatterns": ["bot", "fluentui"],
       "excludeDepNames": [
         "@microsoft/teams-js",
-        "@microsoft/microsoft-graph-client"
+        "@microsoft/microsoft-graph-client",
+        "@microsoft/mgt-element",
+        "@microsoft/mgt-react",
+        "@microsoft/mgt-teamsfx-provider"
       ]
     },
     {
@@ -29,6 +32,10 @@
       "matchPackagePrefixes": ["@fluentui/"]
     },
     {
+      "groupName": "graph toolkit"
+      "matchPackagePrefixes": ["@microsoft/mgt"]
+    }
+    {
       "matchPackageNames": [
         "botbuilder",
         "botbuilder-dialogs",
@@ -37,7 +44,10 @@
         "@microsoft/teams-js",
         "@microsoft/microsoft-graph-client",
         "@fluentui/react-components",
-        "@fluentui/react"
+        "@fluentui/react",
+        "@microsoft/mgt-element",
+        "@microsoft/mgt-react",
+        "@microsoft/mgt-teamsfx-provider"
       ],
       "rangeStrategy": "bump"
     }
